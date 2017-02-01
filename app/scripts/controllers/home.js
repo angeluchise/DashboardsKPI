@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name dashboardsKpiApp.controller:MainCtrl
+ * @name dashboardsKpiApp.controller:HomeCtrl
  * @description
- * # MainCtrl
+ * # HomeCtrl
  * Controller of the dashboardsKpiApp
  */
 angular.module('dashboardsKpiApp')
-  .controller('MainCtrl', function () {
+  .controller('HomeCtrl', function () {
   });
