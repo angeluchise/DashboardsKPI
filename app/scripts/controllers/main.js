@@ -9,4 +9,7 @@
  */
 angular.module('dashboardsKpiApp')
   .controller('MainCtrl', function () {
+    $(document).ready(function(){
+      angular.element('.modal').modal();
+    });
   });
