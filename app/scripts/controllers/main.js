@@ -9,7 +9,8 @@
  */
 angular.module('dashboardsKpiApp')
   .controller('MainCtrl', function () {
-    $(document).ready(function(){
+    angular.element(document).ready(function(){
       angular.element('.modal').modal();
+      angular.element('select').material_select();
     });
   });
