@@ -1,1 +1,53 @@
+<div class="navbar-fixed h-55">
+  <nav class="row h-55 cyan">
+    <div class="input-field col s2 l2 offset-l1">
+      <select>
+        <option disable selected>Facility</option>
+      </select>
+    </div>
+    <div class="input-field col s2 l2">
+      <select>
+        <option disable selected>Direction</option>
+      </select>
+    </div>
+    <div class="input-field col s2 l2">
+      <select>
+        <option disable selected>Time Period</option>
+      </select>
+    </div>
+    <div class="input-field col s2 l2">
+      <select>
+        <option disable selected>Mode</option>
+      </select>
+    </div>
+    <ul class="right">
+      <li class="tooltipped" data-position="bottom" data-tooltip="Reset Dashboard"><a><i class="material-icons">replay</i></a></li>
+      <li class="tooltipped" data-position="bottom" data-tooltip="Info"><a href="#ModeAnalysisFilter"><i class="material-icons">info</i></a></li>
+    </ul>
+  </nav>
+</div>
 
+<div class="row">
+  <div class="col s12">
+    <h1>AQUI VAN LAS GRAFICAS</h1>
+
+  </div>
+
+</div>
+
+<div id="ModeAnalysisFilter" class="modal">
+  <div class="modal-content grey darken-2 white-text">
+    <h5>Mode Analysis Filter</h5>
+  </div>
+  <div class="modal-content">
+    <ul>
+      <li>Facility - Billing locations. The followoing locations have been consolidated: FD-Corporate (FD East, Fisher - Corp), FD-St. Clair Shore (FD West, FD Far West, FD Southeast, FD Midwest, FD Central), FD-Mexico (FD Mexico, Fisher MX-Mora)</li>
+      <li>Direction - Freight direction</li>
+      <li>Time Period - Month and year ranges that are available</li>
+      <li>Mode - Frieght mode</li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect btn-flat">{{'CLOSE' | translate}}</a>
+  </div>
+</div>
