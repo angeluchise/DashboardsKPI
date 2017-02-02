@@ -1,0 +1,8 @@
+{
+  "TITLE": "Freight by shipping mode",
+  "MODE_ANALISYS": "Mode analysis",
+  "MODAL_DESC_1": "Freight Spend by Mode have invoices that have been batchd or paid",
+  "MODAL_DESC_2": "Freight Dollars - Foreign currency adjustments have been made",
+  "MODAL_DESC_3": "Freight Count - Count of freight ids",
+  "CLOSE": "Close"
+}
