@@ -12,5 +12,6 @@ angular.module('dashboardsKpiApp')
     angular.element(document).ready(function(){
       angular.element('.modal').modal();
       angular.element('select').material_select();
+      angular.element('.tooltipped').tooltip({delay: 50});
     });
   });
