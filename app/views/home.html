@@ -28,11 +28,34 @@
 </div>
 
 <div class="row">
-  <div class="col s12">
-    <h1>AQUI VAN LAS GRAFICAS</h1>
-
+  <div class="container-chart">
+    <div class="container-title">
+      <p>Freight Distribution by Mode</p>
+    </div>
+    <div class="containers-charts">
+      <div class="col s6">
+        <nvd3 options='options' data='exampleData'></nvd3>
+      </div>
+      <div class="col s6">
+        <nvd3 options='options' data='exampleData2'></nvd3>
+      </div>
+    </div>
   </div>
-
+</div>
+<div class="row">
+  <div class="container-chart">
+    <div class="container-title">
+      <p>Three Month Comparison by Mode</p>
+    </div>
+    <div class="containers-charts">
+      <div class="col s6">
+        <nvd3 options='optionsdiscreteBarChart' data='data'></nvd3>
+      </div>
+      <div class="col s6">
+        <nvd3 options='optionsdiscreteBarChart' data='data'></nvd3>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="ModeAnalysisFilter" class="modal">
