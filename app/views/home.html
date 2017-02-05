@@ -2,12 +2,12 @@
   <nav class="row h-55 cyan">
     <div class="input-field col s2 l2 offset-l1">
       <select>
-        <option disable selected>Facility</option>
+        <option ng-repeat="Dropdown in Dropdowns" value="{{Dropdown.facility}}">{{Dropdown.facility}}</option>
       </select>
     </div>
     <div class="input-field col s2 l2">
       <select>
-        <option disable selected>Direction</option>
+        <option ng-repeat="direction in directions" value="{{direction.direction}}">{{direction.direction}}</option>
       </select>
     </div>
     <div class="input-field col s2 l2">
@@ -17,7 +17,7 @@
     </div>
     <div class="input-field col s2 l2">
       <select>
-        <option disable selected>Mode</option>
+        <option ng-repeat="mode in modes" value="{{mode.ship_mode}}">{{mode.ship_mode}}</option>
       </select>
     </div>
     <ul class="right">
