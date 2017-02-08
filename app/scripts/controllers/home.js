@@ -85,36 +85,36 @@ angular.module('dashboardsKpiApp')
                 }
 
             };
-            $scope.datapie = [
-                {
-                    key: "One",
-                    y: 5
-                },
-                {
-                    key: "Two",
-                    y: 2
-                },
-                {
-                    key: "Three",
-                    y: 9
-                },
-                {
-                    key: "Four",
-                    y: 7
-                },
-                {
-                    key: "Five",
-                    y: 4
-                },
-                {
-                    key: "Six",
-                    y: 3
-                },
-                {
-                    key: "Seven",
-                    y: .5
-                }
-            ];
+            // $scope.datapie = [
+            //     {
+            //         key: "One",
+            //         y: 5
+            //     },
+            //     {
+            //         key: "Two",
+            //         y: 2
+            //     },
+            //     {
+            //         key: "Three",
+            //         y: 9
+            //     },
+            //     {
+            //         key: "Four",
+            //         y: 7
+            //     },
+            //     {
+            //         key: "Five",
+            //         y: 4
+            //     },
+            //     {
+            //         key: "Six",
+            //         y: 3
+            //     },
+            //     {
+            //         key: "Seven",
+            //         y: .5
+            //     }
+            // ];
 $scope.exampleData = [
             {
                 key: "On Hold",
@@ -263,13 +263,21 @@ $scope.exampleData2 = [
           {"customer_name":"FISHER&COMPANY","facility":"All","time_period":"2016 YE","direction":"All","ship_year":2016,"ship_month_num":13,"ship_month_name":"2016 YE","ship_month_rank":null,"ship_mode":"Truckload","freight_spend":14771353.9900,"freight_count":22653.0,"freight_spend_percentage":72.46146754637329213000,"freight_count_percentage":64.92877411218435610100},
           {"customer_name":"FISHER&COMPANY","facility":"All","time_period":"2016 YE","direction":"All","ship_year":2016,"ship_month_num":13,"ship_month_name":"2016 YE","ship_month_rank":null,"ship_mode":"Consolidation","freight_spend":636252.6100,"freight_count":1580.0,"freight_spend_percentage":3.12116261529050954300,"freight_count_percentage":4.52864799793631230500}
         ];
-        var kvArray = [{clave:1, valor:10}, {clave:2, valor:20}, {clave:3, valor: 30}];
-        var reformattedArray = kvArray.map(function(obj){
+        var reformattedArray = $scope.datacharts.map(function(obj){
            var rObj = {};
-           rObj[obj.clave] = obj.valor;
+           rObj['key'] = obj.ship_mode,
+           rObj['y'] = obj.freight_spend_percentage;
            return rObj;
         });
-        console.log($scope.datacharts);
+        var reformattedArray2 = $scope.datacharts.map(function(obj){
+           var rObj = {};
+           rObj['key'] = obj.ship_mode,
+           rObj['y'] = obj.freight_count_percentage;
+           return rObj;
+        });
+        $scope.datapie = reformattedArray;
+        $scope.datapie2 = reformattedArray2;
+        console.log($scope.datapie);
         $scope.dataothers = [
           {"customer_name":"FISHER&COMPANY","rank_name":"Spend - Top 10","rank_value_by_customer":10,"sort_order":1},
           {"customer_name":"FISHER&COMPANY","rank_name":"Spend - Top 20","rank_value_by_customer":20,"sort_order":2},
