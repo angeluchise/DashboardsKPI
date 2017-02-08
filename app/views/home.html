@@ -33,13 +33,14 @@
       <p>Freight Distribution by Mode</p>
     </div>
     <div class="containers-charts">
-      <div class="col s6" ng-repeat="datachart in datacharts | limitTo: 2">
+      <div class="col s6" ng-repeat="datachart in datacharts | limitTo: 1">
         <p class="title-charts"> Title</p>
         <nvd3 options="options" data="datapie"></nvd3>
       </div>
-      <!-- <div class="col s6">
-        <nvd3 options='options' data='exampleData2'></nvd3>
-      </div> -->
+      <div class="col s6" ng-repeat="datachart in datacharts | limitTo: 1">
+        <p class="title-charts" > Title</p>
+        <nvd3 options='options' data='datapie2'></nvd3>
+      </div>
     </div>
   </div>
 </div>
